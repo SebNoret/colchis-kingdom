@@ -1,0 +1,512 @@
+/***********
+*
+* 1. variables
+* 2. custom scrollbar
+* 3. default config
+* 4. Container classes
+* 5. images configuration
+* 6. header component
+* 7. hero component
+* 8. home page utilities 
+* 9. card component
+* 10. table component
+* 11. form component
+* 12. buttons
+* 13. footer component
+* 14. footer social icons component
+* 15. utilities classes
+* 16. media queries
+*
+****/
+
+/******Variables************************************/
+:root {
+  font-size: 18px;
+  --content-margin: 0vh;
+
+  --dark-green: #2f5233;
+  --light-green: #437420;
+
+  --yellow: #f3e6c1;
+  --dark-blue: rgb(6, 6, 26);
+  --brown: rgb(202, 58, 58);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*****custom scrollbar******************************** */
+
+/******firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #fff var(--dark-blue);
+}
+/********** chrome edge safari */
+*::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--dark-blue);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid var(--dark-blue);
+}
+/******default config********************************/
+body {
+  margin: 0;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: white;
+  background-image: url("./assets/page-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  backdrop-filter: blur(2px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table th {
+  font-family: "Quattrocento", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-blue);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+  display: block;
+}
+
+/*****************Containers***************************************************************************************/
+.container,
+.header-container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  min-height: 50vh;
+  margin-top: var(--content-margin);
+  background-color: white;
+  font-size: 1rem;
+  padding: 1em;
+  color: black;
+  box-shadow: 0px 1px 10px black;
+  -moz-box-shadow: 0px 1px 10px black;
+  -webkit-box-shadow: 0px 1px 10px black;
+}
+
+.presentation-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/**************Image configurations*********************************************************************************************/
+
+.portrait,
+.thumbnail {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border-radius: 5px;
+}
+.portrait {
+  max-width: 250px;
+}
+.thumbnail {
+  max-width: 300px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/**********Header component***********************************************************************************/
+.header {
+  background-color: var(--dark-blue);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: 1px 1px 10px black;
+  -webkit-box-shadow: 1px 1px 10px black;
+  -moz-box-shadow: 1px 1px 10px black;
+  z-index: 20;
+}
+.header-container {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+
+  display: none;
+}
+
+.nav-item {
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-item a {
+  padding: 0.2em 0.5em;
+  display: block;
+}
+.logo {
+  padding: 0.3em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+/******************Active class for nav-links************************************************************/
+.active a {
+  font-weight: bold;
+  color: var(--yellow);
+}
+/************Navigation hover effects**********************************************************************/
+
+.logo:hover img,
+.logo a:focus img,
+.nav-item:hover,
+.nav-item a:focus {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(3px);
+}
+
+.nav-item:hover a,
+.nav-item a:focus {
+  color: var(--brown);
+  font-weight: bold;
+}
+
+/********Hero component**************************************************************************************************/
+.hero {
+  background-image: url("./assets/hero-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--content-margin);
+  position: relative;
+  border-bottom: 2px solid black;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  min-height: 90vh;
+  backdrop-filter: blur(2px);
+}
+
+.hero-title {
+  position: absolute;
+  top: 20vh;
+  z-index: 15;
+  color: var(--dark-blue);
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 0.5em 0.5em;
+}
+/*****home page utilities*******************************************/
+.presentation {
+  padding: 0.5em 0.5em;
+}
+.presentation h2 {
+  text-align: center;
+}
+
+.presentation-container p {
+  max-width: 100%;
+  padding: auto;
+  margin-bottom: 1.5em;
+}
+
+/****************Card components************************************************************************************/
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--yellow);
+  margin-bottom: 3vh;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+}
+
+.card-infos {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card-infos h6 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+/**********Table component************************************************************************************************/
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(129, 74, 74, 0.6);
+  border-collapse: collapse;
+  font-size: 0.7rem;
+}
+
+table,
+table th,
+table td {
+  padding: 0.5em;
+}
+
+table th {
+  border: 1px solid rgba(129, 74, 74, 0.6);
+  background: var(--yellow);
+  color: #000000;
+}
+table td {
+  border: 1px solid rgba(129, 74, 74, 0.6);
+  text-align: center;
+  background: #ffffff;
+  color: #000000;
+}
+
+/**************Form component*********************************************************************************************/
+.form {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 1rem;
+  border: 1px solid var(--dark-blue);
+  border-radius: 0.3rem;
+  background: var(--yellow);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1.5rem 0.3rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border: 1px solid var(--dark-blue);
+  border-radius: 0.3rem;
+  background-clip: padding-box;
+}
+
+.form-control:focus {
+  border: 2px solid var(--dark-green);
+  box-shadow: 4px 3px 19px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 3px 19px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 3px 19px -4px rgba(0, 0, 0, 0.75);
+}
+
+.form-label {
+  font-size: 1rem;
+  color: var(--dark-blue);
+  display: block;
+  padding: 0.5em 0.5em;
+  margin-bottom: 0.1em;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+}
+
+/******buttons******************************************/
+.btn,
+.menu-btn {
+  display: block;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn {
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  color: var(--dark-blue);
+  background-color: var(--brown);
+  border-radius: 0.2rem;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 1em;
+}
+.menu-btn {
+  border-radius: 30px;
+  font-size: 0.8rem;
+  background-color: var(--dark-blue);
+  border: 1px solid white;
+  color: white;
+  margin-right: 0.8rem;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  background-color: var(--dark-blue);
+  border-color: #fff;
+}
+
+/*********Footer component*********************************************************************************************/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40vh;
+  margin-top: var(--content-margin);
+  background-color: var(--dark-blue);
+  color: white;
+  flex-wrap: wrap;
+}
+.footer .credits {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.3em;
+  margin-bottom: 10vh;
+}
+
+.footer p,
+.footer p a {
+  color: white;
+}
+
+/*********footer social icons component********************************************************************************************/
+.social-media a {
+  transition: all 0.3s ease-in-out;
+}
+.social-media a:hover,
+.social-media a:focus {
+  color: var(--brown);
+}
+
+.social-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 7vh;
+}
+.social-media a {
+  color: white;
+}
+
+.social-media p {
+  width: 100%;
+  text-align: center;
+}
+
+/********Utilities classes**************************************************************************************/
+.text-center {
+  text-align: center;
+}
+
+.js-menu {
+  display: block;
+}
+
+/*******Media Queries****************************************************************************/
+
+@media screen and (min-width: 281px) {
+  table {
+    font-size: 0.8rem;
+    padding: 1em;
+  }
+}
+@media screen and (min-width: 500px) {
+  .card-list {
+    flex-wrap: nowrap;
+  }
+  .card {
+    width: 30%;
+  }
+  .card-infos {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 765px) {
+  table {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 785px) {
+  :root {
+    --content-margin: 5vh;
+  }
+  .form {
+    margin-bottom: 2em;
+  }
+  .form-group {
+    margin-bottom: 3vh;
+  }
+  .presentation-container {
+    flex-wrap: nowrap;
+  }
+  .presentation-container p {
+    max-width: 57%;
+    margin-top: 0;
+  }
+  .presentation h2 {
+    text-align: left;
+  }
+}
+
+/*******responsive menu**************************************************************/
+@media screen and (min-width: 578px) {
+  #menu-button {
+    display: none;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-item {
+    width: auto;
+    text-align: start;
+  }
+  .logo {
+    width: 10%;
+    min-width: auto;
+  }
+}
