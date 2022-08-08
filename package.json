@@ -1,7 +1,7 @@
 {
-  "name": "techchallenge-web-dev-starter",
+  "name": "cholchis-kingdom",
   "version": "1.0.0",
-  "description": "",
+  "description": " a simple static website to apply to wilcodeschool",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
