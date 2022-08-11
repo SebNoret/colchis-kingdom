@@ -1,10 +1,22 @@
-import Person from './js/test';
-
-const john = new Person('John', 35);
-console.log(john.getInfo());
-
-const calculate = (a, b) => a + b;
-console.log(calculate(2,46));
-
-const span = document.querySelector('span');
-span.textContent = john.name;
+if (document.getElementById("message-form")) {
+    const userName = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+    document
+      .getElementById("message-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Votre message a bien été envoyé.");
+        email.value = "";
+        userName.value = "";
+        message.value = "";
+      });
+  }
+  
+  document
+    .getElementById("menu-button")
+    .addEventListener("click", function (event) {
+      const menu = document.getElementById("navlist");
+      menu.classList.toggle("js-menu");
+    });
+  
