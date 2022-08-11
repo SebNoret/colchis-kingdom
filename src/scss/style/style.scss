@@ -347,6 +347,27 @@ textarea {
   resize: vertical;
   width: 100%;
 }
+/********flash message component************************************************/
+.message{
+  background-color: greenyellow;
+  color: black;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: .3em ;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  display: none;
+}
+.message p{
+  text-align: center;
+}
+.js-display{
+  display: block;
+}
 
 /******buttons******************************************/
 .btn,
