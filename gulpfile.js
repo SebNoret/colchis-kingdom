@@ -42,7 +42,7 @@ const html = () => {
   return src("./src/html/**/*.html")
     .pipe(
       rename(function (file) {
-        if (file.basename === "index") {
+        if (file.basename === "index" || file.basename === "404") {
           return file;
         } else {
           return {
