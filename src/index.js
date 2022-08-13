@@ -10,13 +10,16 @@ if (document.getElementById("message-form")) {
       event.preventDefault();
       event.stopPropagation();
 
-      modal.style.display = "flex";
+      setTimeout(() => {
+
+        modal.style.display = "flex";
+      }, 600);
       email.value = "";
       userName.value = "";
       message.value = "";
       setTimeout(() => {
         modal.style.display = "none";
-      }, 5000)
+      }, 3500)
     });
 }
 

@@ -28,20 +28,30 @@
      padding: 20px;
      border: 1px solid #888;
      width: 50%;
-     color: black;
- }
-
- /* The Close Button */
- .close {
-     color: #aaa;
-     float: right;
-     font-size: 28px;
+     font-size: 1.5rem;
+     color: white;
      font-weight: bold;
+     background-color: rgb(81, 219, 81);
+     border-radius: 0.3rem;
+
+
+     box-shadow: 4px 3px 19px -4px rgba(0, 0, 0, 0.75);
+     -webkit-box-shadow: 4px 3px 19px -4px rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: 4px 3px 19px -4px rgba(0, 0, 0, 0.75);
+     animation-name: animatetop;
+     animation-duration: 0.4s
  }
 
- .close:hover,
- .close:focus {
-     color: black;
-     text-decoration: none;
-     cursor: pointer;
+
+ /* Add Animation */
+ @keyframes animatetop {
+     from {
+         top: -300px;
+         opacity: 0
+     }
+
+     to {
+         top: 0;
+         opacity: 1
+     }
  }
