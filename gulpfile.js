@@ -12,7 +12,7 @@ const mode = require("gulp-mode")();
 const browserSync = require("browser-sync").create();
 
 
-import imagemin from 'gulp-imagemin';
+
 
 // clean tasks
 const clean = () => {
@@ -116,12 +116,7 @@ const watchForChanges = () => {
 };
 
 
-const minifyImages= ()=>{
-  gulp.src('src/assets/images/**/*.{jpg,jpeg,png,gif,svg}')
-  .pipe(imagemin())
-  .pipe(dest("./dist/assets/images"))
-  
-}
+
 
 
 // public tasks
@@ -130,4 +125,4 @@ exports.default = series(
   parallel(html, css, js, copyImages, copyFonts),
   watchForChanges
 );
-exports.build = series(clean, parallel(html, css, js, minifyImages, copyFonts));
+exports.build = series(clean, parallel(html, css, js, copyImages, copyFonts));
