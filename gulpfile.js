@@ -11,7 +11,9 @@ const del = require("del");
 const mode = require("gulp-mode")();
 const browserSync = require("browser-sync").create();
 
-const imagemin = require('gulp-imagemin');
+
+import imagemin from 'gulp-imagemin';
+
 // clean tasks
 const clean = () => {
   return del(["./dist"]);
