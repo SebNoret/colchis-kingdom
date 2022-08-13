@@ -395,7 +395,11 @@ textarea {
 .btn {
   padding: 0.5em 1.5em;
   font-size: 1rem;
-  color: var(--dark-blue);
+  // color: var(--dark-blue);
+  color: var(--yellow);
+
+  
+  
   background-color: var(--brown);
   border-radius: 0.2rem;
   border: 1px solid rgb(0, 0, 0);
@@ -475,11 +479,7 @@ textarea {
 .js-menu {
   display: block;
 }
-/*****404 error page******************************************************************************************/
-// .error-message{
-//   text-align: center;
-//   font-size: ;
-// }
+
 /*******Media Queries****************************************************************************/
 
 @media screen and (min-width: 281px) {
