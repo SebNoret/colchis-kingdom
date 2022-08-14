@@ -6,4 +6,4 @@ This project uses GULP for all the build tasks (SCSS transformation,assets minif
 
 ## TODO
 
-Add an animation when the responsive menu appears on small screens, create a modal message to replace the alert message on contact form, maybe create an english translated version of the website in a subfolder
+Add an animation when the responsive menu appears on small screens, maybe create an english translated version of the website in a subfolder

@@ -2,6 +2,7 @@
  .modal-overlay {
      /* Hidden by default */
      position: fixed;
+     display: none;
      z-index: 1000;
      left: 0;
      top: 0;
@@ -11,37 +12,37 @@
      background-color: rgb(0, 0, 0);
      background-color: rgba(0, 0, 0, 0.4);
 
-     display: flex;
      justify-content: center;
      align-items: flex-start;
 
 
-     display: none;
+
 
  }
 
  /* Modal Content/Box */
  .modal-content {
-     //  position: fixed;
      display: flex;
      align-items: center;
      justify-content: center;
      background-color: #fefefe;
      padding: 20px;
-     //  border: 1px solid #888;
+     border: 5px solid white;
 
 
      //  width: 50%;
 
-     margin-top: 45%;
+     margin-top: 35%;
      margin-left: 1rem;
      margin-right: 1rem;
-     height: 40%;
+     height: 30%;
 
      font-size: 1.5rem;
      color: white;
      font-weight: bold;
-     background-color: #007E33;
+     background-color: hsl(141, 53%, 53%);
+
+
      border-radius: 0.3rem;
 
 
@@ -67,26 +68,5 @@
      to {
          top: 0;
          opacity: 1
-     }
- }
-
-
- /////////////////////////////////////////////////////////////////////////////////:
- @media screen and (min-width: 281px) {}
-
- @media screen and (min-width: 500px) {}
-
- @media screen and (min-width: 765px) {
-     .modal-content {
-         //  width: 70%;
-         //  height: 20%;
-         //  background-color: red;
-     }
- }
-
- @media screen and (min-width: 785px) {
-     :root {
-         --content-margin: 5vh;
-
      }
  }
