@@ -22,7 +22,6 @@
 @use 'style/base/base.scss';
 @use 'style/base/containers.scss';
 
-@use 'style/utilities/utilities.scss';
 
 @use 'style/components/images.scss';
 @use 'style/components/header.scss';
@@ -33,6 +32,7 @@
 @use 'style/components/buttons.scss';
 @use 'style/components/footer.scss';
 
+@use 'style/utilities/utilities.scss';
 
 
 @use 'style/modal.scss';
