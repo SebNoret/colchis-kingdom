@@ -1,0 +1,52 @@
+/*********Footer component*********************************************************************************************/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 40vh;
+    margin-top: var(--content-margin);
+    background-color: var(--dark-blue);
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer .credits {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.3em;
+    margin-bottom: 10vh;
+}
+
+.footer p,
+.footer p a {
+    color: white;
+}
+
+/*********footer social icons component********************************************************************************************/
+.social-media a {
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media a:hover,
+.social-media a:focus {
+    color: var(--brown);
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 7vh;
+}
+
+.social-media a {
+    color: white;
+}
+
+.social-media p {
+    width: 100%;
+    text-align: center;
+}

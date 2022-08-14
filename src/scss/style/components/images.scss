@@ -1,0 +1,22 @@
+/**************Image configurations*********************************************************************************************/
+
+.portrait,
+.thumbnail {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portrait {
+    max-width: 250px;
+}
+
+.thumbnail {
+    max-width: 300px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}

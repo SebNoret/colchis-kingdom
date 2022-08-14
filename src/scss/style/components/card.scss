@@ -1,0 +1,26 @@
+/****************Card components************************************************************************************/
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--yellow);
+    margin-bottom: 3vh;
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+}
+
+.card-infos {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card-infos h6 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}

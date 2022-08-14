@@ -1,2 +1,41 @@
+/***********
+*
+* 1. variables
+* 2. custom scrollbar
+* 3. default config
+* 4. Container classes
+* 5. images configuration
+* 6. header component
+* 7. hero component
+* 8. home page utilities 
+* 9. card component
+* 10. table component
+* 11. form component
+* 12. buttons
+* 13. footer component
+* 14. footer social icons component
+* 15. utilities classes
+* 16. media queries
+*
+****/
+
+@use 'style/base/base.scss';
+@use 'style/base/containers.scss';
+
+@use 'style/utilities/utilities.scss';
+
+@use 'style/components/images.scss';
+@use 'style/components/header.scss';
+@use 'style/components/hero.scss';
+@use 'style/components/card.scss';
+@use 'style/components/table.scss';
+@use 'style/components/form.scss';
+@use 'style/components/buttons.scss';
+@use 'style/components/footer.scss';
+
+
+
 @use 'style/modal.scss';
-@use 'style/style.scss';
+
+
+@use 'style/media-queries/media-queries.scss';
