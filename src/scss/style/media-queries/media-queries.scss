@@ -36,12 +36,6 @@
         margin-bottom: 2em;
     }
 
-    .modal-content {
-        margin-top: 30vh;
-        width: 70%;
-        height: 20%;
-        // background-color: rgba(255, 0, 0, 0.564);
-    }
 
     .form-group {
         margin-bottom: 3vh;
@@ -58,6 +52,13 @@
 
     .presentation h2 {
         text-align: left;
+    }
+
+    .modal-content {
+        margin-top: 45vh;
+        width: 70%;
+        height: 20%;
+        background-color: rgba(255, 0, 0, 0.564);
     }
 }
 
