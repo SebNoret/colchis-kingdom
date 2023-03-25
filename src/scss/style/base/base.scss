@@ -1,56 +1,56 @@
 /******Variables************************************/
 :root {
-    font-size: 18px;
-    --content-margin: 0vh;
+  font-size: 18px;
+  --content-margin: 0vh;
 
-    --dark-green: #2f5233;
-    --light-green: #437420;
+  --dark-green: #2f5233;
+  --light-green: #437420;
 
-    --yellow: #f3e6c1;
-    --dark-blue: rgb(6, 6, 26);
-    --brown: rgb(202, 58, 58);
+  --yellow: #f3e6c1;
+  --dark-blue: rgb(6, 6, 26);
+  --brown: rgb(202, 58, 58);
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*****custom scrollbar******************************** */
 
 /******firefox */
 * {
-    scrollbar-width: auto;
-    scrollbar-color: #fff var(--dark-blue);
+  scrollbar-width: auto;
+  scrollbar-color: #fff var(--dark-blue);
 }
 
 /********** chrome edge safari */
 *::-webkit-scrollbar {
-    width: 0.5em;
+  width: 0.5em;
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--dark-blue);
+  background: var(--dark-blue);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #fff;
-    border-radius: 25px;
-    border: 1px solid var(--dark-blue);
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid var(--dark-blue);
 }
 
 /******default config********************************/
 body {
-    margin: 0;
-    font-family: "Quattrocento Sans", sans-serif;
-    color: white;
-    background-image: url("./assets/images/page-background.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    backdrop-filter: blur(2px);
-
+  margin: 0;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: white;
+  background-color: #f3e6c1;
+  background-image: url("./assets/images/page-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  backdrop-filter: blur(2px);
 }
 
 h1,
@@ -60,7 +60,7 @@ h4,
 h5,
 h6,
 table th {
-    font-family: "Quattrocento", serif;
+  font-family: "Quattrocento", serif;
 }
 
 h1,
@@ -69,15 +69,15 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 li {
-    list-style: none;
-    display: block;
+  list-style: none;
+  display: block;
 }
