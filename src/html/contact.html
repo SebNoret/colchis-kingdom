@@ -1,106 +1,135 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
 
-  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
-  <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+    <link href="../app.css" rel="stylesheet" type="text/css" />
+    <title>Contactez nous | Royaume de Colchide</title>
+  </head>
 
-  <link href="../app.css" rel="stylesheet" type="text/css" />
-  <title>Contactez nous | Royaume de Colchide</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="../index.html" class="logo-link">
+            <img
+              src="../assets/images/logo-white.svg"
+              alt="logo"
+              class="logo-img"
+              width="50"
+              height="50"
+          /></a>
+          <button class="menu-btn" id="menu-button">menu</button>
+        </div>
 
-<body>
-
-
-  <header class="header">
-    <div class="header-container">
-      <div class="logo">
-        <a href="../index.html" class="logo-link">
-          <img src="../assets/images/logo-white.svg" alt="logo" class="logo-img" width="50" height="50" /></a>
-        <button class="menu-btn" id="menu-button">menu</button>
+        <nav class="navbar">
+          <ul class="nav-list" id="navlist">
+            <li class="nav-item"><a href="../index.html">Accueil</a></li>
+            <li class="nav-item">
+              <a href="../famille-royale/">Famille Royale</a>
+            </li>
+            <li class="nav-item">
+              <a href="../possessions-royales/">Trésor Royal</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#">Contactez Nous</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <nav class="navbar">
-        <ul class="nav-list" id="navlist">
-          <li class="nav-item"><a href="../index.html">Accueil</a></li>
-          <li class="nav-item">
-            <a href="../famille-royale/">Famille Royale</a>
-          </li>
-          <li class="nav-item">
-            <a href="../possessions-royales/">Possessions Royales</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#">Contactez nous</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- The Modal -->
-  <div id="modal-message" class="modal-overlay">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-
-      <p>Votre message a bien été envoyé !</p>
-    </div>
-
-  </div>
-
-  <main class="container">
-    <h2 class="text-center">Contactez notre royaume</h2>
-
-    <form action="#" class="form" id="message-form">
-      <div class="form-group">
-        <label for="name" class="form-label">Nom :</label>
-        <input type="text" id="name" name="user-name" required class="form-control" />
-      </div>
-      <div class="form-group">
-        <label for="email" class="form-label">Adresse E-mail :</label>
-        <input type="email" name="email-adress" id="email" required class="form-control" />
-      </div>
-      <div class="form-group">
-        <label for="message" class="form-label">Votre message :</label>
-        <textarea name="message-content" id="message" cols="30" rows="10" required class="form-control"></textarea>
-      </div>
-      <input type="submit" value="Envoyer" class="btn" />
-    </form>
-  </main>
-
-  <footer class="footer">
-    <div class="social-media">
-      <p>Nous suivre sur les réseaux sociaux :</p>
-
-      <div>
-        <a href="#"><span><i class="fab fa-facebook fa-2x"></i></span></a>
-      </div>
-      &ensp;&ensp;
-      <div>
-        <a href="#"><span><i class="fab fa-instagram fa-2x"></i></span></a>
-      </div>
-      &ensp;&ensp;
-      <div>
-        <a href="#" target="_blank"><span><i class="fab fa-twitter fa-2x"></i></span></a>
+    </header>
+    <!-- The Modal -->
+    <div id="modal-message" class="modal-overlay">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p>Votre message a bien été envoyé !</p>
       </div>
     </div>
-    <p class="credits">Copyright &copy; 2022</p>
-  </footer>
 
-  <!-- Connect the Javascript file -->
-  <script src="../app.js"></script>
-</body>
+    <main class="container">
+      <h2 class="text-center">Contactez notre royaume</h2>
 
+      <form action="#" class="form" id="message-form">
+        <div class="form-group">
+          <label for="name" class="form-label">Nom :</label>
+          <input
+            type="text"
+            id="name"
+            name="user-name"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Adresse E-mail :</label>
+          <input
+            type="email"
+            name="email-adress"
+            id="email"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Votre message :</label>
+          <textarea
+            name="message-content"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+            class="form-control"
+          ></textarea>
+        </div>
+        <input type="submit" value="Envoyer" class="btn" />
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="social-media">
+        <p>Nous suivre sur les réseaux sociaux :</p>
+
+        <div>
+          <a href="#"
+            ><span><i class="fab fa-facebook fa-2x"></i></span
+          ></a>
+        </div>
+        &ensp;&ensp;
+        <div>
+          <a href="#"
+            ><span><i class="fab fa-instagram fa-2x"></i></span
+          ></a>
+        </div>
+        &ensp;&ensp;
+        <div>
+          <a href="#" target="_blank"
+            ><span><i class="fab fa-twitter fa-2x"></i></span
+          ></a>
+        </div>
+      </div>
+      <p class="credits">Copyright &copy; 2022</p>
+    </footer>
+
+    <!-- Connect the Javascript file -->
+    <script src="../app.js"></script>
+  </body>
 </html>

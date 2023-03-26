@@ -4,7 +4,7 @@
   "description": " a simple static website to apply to wildcodeschool",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp --development",
+    "dev": "gulp --development  --openssl-legacy-provider",
     "build": "gulp build --production --openssl-legacy-provider"
   },
   "devDependencies": {

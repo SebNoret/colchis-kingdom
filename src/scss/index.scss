@@ -19,23 +19,21 @@
 *
 ****/
 
-@use 'style/base/base.scss';
-@use 'style/base/containers.scss';
+@use "style/base/base.scss";
+@use "style/base/containers.scss";
 
+@use "style/components/preloader.scss";
+@use "style/components/images.scss";
+@use "style/components/header.scss";
+@use "style/components/hero.scss";
+@use "style/components/card.scss";
+@use "style/components/table.scss";
+@use "style/components/form.scss";
+@use "style/components/buttons.scss";
+@use "style/components/footer.scss";
 
-@use 'style/components/images.scss';
-@use 'style/components/header.scss';
-@use 'style/components/hero.scss';
-@use 'style/components/card.scss';
-@use 'style/components/table.scss';
-@use 'style/components/form.scss';
-@use 'style/components/buttons.scss';
-@use 'style/components/footer.scss';
+@use "style/utilities/utilities.scss";
 
-@use 'style/utilities/utilities.scss';
+@use "style/components/modal.scss";
 
-@use 'style/components/modal.scss';
-
-
-
-@use 'style/media-queries/media-queries.scss';
+@use "style/media-queries/media-queries.scss";

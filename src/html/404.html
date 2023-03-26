@@ -1,81 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://sebnoret.github.io/colchis-kingdom/assets/images/favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://sebnoret.github.io/colchis-kingdom/assets/images/favicon.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" type="image/svg+xml" href="https://sebnoret.github.io/colchis-kingdom/assets/images/favicon.svg" />
-  <link rel="icon" type="image/png" href="https://sebnoret.github.io/colchis-kingdom/assets/images/favicon.png" />
+    <link
+      href="https://sebnoret.github.io/colchis-kingdom/app.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Page non trouvée</title>
+  </head>
 
-  <link href="https://sebnoret.github.io/colchis-kingdom/app.css" rel="stylesheet" type="text/css" />
-  <title>Page non trouvée</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a
+            href="https://sebnoret.github.io/colchis-kingdom/index.html"
+            class="logo-link"
+          >
+            <img
+              src="https://sebnoret.github.io/colchis-kingdom/assets/images/logo-white.svg"
+              alt="logo"
+              class="logo-img"
+              width="50"
+              height="50"
+          /></a>
+          <button class="menu-btn" id="menu-button">menu</button>
+        </div>
 
-<body>
-  <header class="header">
-    <div class="header-container">
-      <div class="logo">
-        <a href="https://sebnoret.github.io/colchis-kingdom/index.html" class="logo-link">
-          <img src="https://sebnoret.github.io/colchis-kingdom/assets/images/logo-white.svg" alt="logo" class="logo-img"
-            width="50" height="50" /></a>
-        <button class="menu-btn" id="menu-button">menu</button>
+        <nav class="navbar">
+          <ul class="nav-list" id="navlist">
+            <li class="nav-item">
+              <a href="https://sebnoret.github.io/colchis-kingdom/index.html"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://sebnoret.github.io/colchis-kingdom/famille-royale/"
+                >Famille Royale</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a
+                href="https://sebnoret.github.io/colchis-kingdom/possessions-royales/"
+                >Trésor Royal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="https://sebnoret.github.io/colchis-kingdom/contact/"
+                >Contactez Nous</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <nav class="navbar">
-        <ul class="nav-list" id="navlist">
-          <li class="nav-item"><a href="https://sebnoret.github.io/colchis-kingdom/index.html">Accueil</a></li>
-          <li class="nav-item">
-            <a href="https://sebnoret.github.io/colchis-kingdom/famille-royale/">Famille Royale</a>
-          </li>
-          <li class="nav-item active">
-            <a href="https://sebnoret.github.io/colchis-kingdom/possessions-royales/">Possessions Royales</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://sebnoret.github.io/colchis-kingdom/contact/">Contactez nous</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="container">
-    <h2 class="text-center">Erreur 404</h2>
-    <p class="text-center">Le contenu que vous recherchez n'existe pas.</p>
-    <div style="display: flex; align-items:center; justify-content:center">
-      <a href="https://sebnoret.github.io/colchis-kingdom/index.html" class="btn" style="color:white">Revenir à
-        l'accueil</a>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="social-media">
-      <p>Nous suivre sur les réseaux sociaux :</p>
-
-      <div>
-        <a href="#"><span><i class="fab fa-facebook fa-2x"></i></span></a>
+    </header>
+    <main class="container">
+      <h2 class="text-center">Erreur 404</h2>
+      <p class="text-center">Le contenu que vous recherchez n'existe pas.</p>
+      <div style="display: flex; align-items: center; justify-content: center">
+        <a
+          href="https://sebnoret.github.io/colchis-kingdom/index.html"
+          class="btn"
+          style="color: white"
+          >Revenir à l'accueil</a
+        >
       </div>
-      &ensp;&ensp;
-      <div>
-        <a href="#"><span><i class="fab fa-instagram fa-2x"></i></span></a>
-      </div>
-      &ensp;&ensp;
-      <div>
-        <a href="#" target="_blank"><span><i class="fab fa-twitter fa-2x"></i></span></a>
-      </div>
-    </div>
-    <p class="credits">Copyright &copy; 2022</p>
-  </footer>
+    </main>
+    <footer class="footer">
+      <div class="social-media">
+        <p>Nous suivre sur les réseaux sociaux :</p>
 
-  <!-- Connect the Javascript file -->
-  <script src="../app.js"></script>
-</body>
+        <div>
+          <a href="#"
+            ><span><i class="fab fa-facebook fa-2x"></i></span
+          ></a>
+        </div>
+        &ensp;&ensp;
+        <div>
+          <a href="#"
+            ><span><i class="fab fa-instagram fa-2x"></i></span
+          ></a>
+        </div>
+        &ensp;&ensp;
+        <div>
+          <a href="#" target="_blank"
+            ><span><i class="fab fa-twitter fa-2x"></i></span
+          ></a>
+        </div>
+      </div>
+      <p class="credits">Copyright &copy; 2022</p>
+    </footer>
 
+    <!-- Connect the Javascript file -->
+    <script src="../app.js"></script>
+  </body>
 </html>

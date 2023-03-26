@@ -3,7 +3,6 @@ if (document.getElementById("message-form")) {
   const email = document.getElementById("email");
   const message = document.getElementById("message");
 
-
   // Get the modal
   const modal = document.getElementById("modal-message");
   document
@@ -14,17 +13,14 @@ if (document.getElementById("message-form")) {
 
       modal.style.display = "flex";
       document.body.style.overflow = "hidden";
-      setTimeout(() => {
-
-      }, 600);
+      setTimeout(() => {}, 600);
       email.value = "";
       userName.value = "";
       message.value = "";
       setTimeout(() => {
         modal.style.display = "none";
         document.body.style.overflow = "";
-
-      }, 2000)
+      }, 2000);
     });
 }
 
@@ -35,29 +31,18 @@ document
     menu.classList.toggle("js-menu");
   });
 
+// preloader
 
-// Get the modal
-// var modal = document.getElementById("modal-message");
+const preloader = document.getElementById("preloader");
+const body = document.body;
+window.addEventListener("load", function () {
+  const timer = setTimeout(() => {
+    if (body.classList.contains("js-loading")) {
+      body.classList.remove("js-loading");
+    }
+    preloader.style.opacity = 0;
+    //preloader.style.display = "none";
 
-// // Get the button that opens the modal
-// var btn = document.getElementById("myBtn");
-
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-
-// // When the user clicks on the button, open the modal
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// }
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function () {
-//   modal.style.display = "none";
-// }
-
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// } 
+    clearTimeout(timer);
+  }, 2000);
+});
