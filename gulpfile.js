@@ -11,8 +11,7 @@ const del = require("del");
 const mode = require("gulp-mode")();
 const browserSync = require("browser-sync").create();
 
-
-
+const htmlmin = require("gulp-htmlmin");
 
 // clean tasks
 const clean = () => {
@@ -43,6 +42,29 @@ const css = () => {
 // html task rename and move to dest
 const html = () => {
   return src("./src/html/**/*.html")
+    .pipe(
+      rename(function (file) {
+        if (file.basename === "index" || file.basename === "404") {
+          return file;
+        } else {
+          return {
+            dirname: file.basename,
+            basename: "index",
+            extname: file.extname,
+          };
+        }
+      })
+    )
+    .pipe(dest("./dist"));
+};
+const htmlMinify = () => {
+  return src("./src/html/**/*.html")
+    .pipe(
+      htmlmin({
+        collapseWhitespace: true,
+        removeComments: true,
+      })
+    )
     .pipe(
       rename(function (file) {
         if (file.basename === "index" || file.basename === "404") {
@@ -115,14 +137,13 @@ const watchForChanges = () => {
   );
 };
 
-
-
-
-
 // public tasks
 exports.default = series(
   clean,
   parallel(html, css, js, copyImages, copyFonts),
   watchForChanges
 );
-exports.build = series(clean, parallel(html, css, js, copyImages, copyFonts));
+exports.build = series(
+  clean,
+  parallel(htmlMinify, css, js, copyImages, copyFonts)
+);
