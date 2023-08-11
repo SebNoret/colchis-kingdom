@@ -17,8 +17,3 @@ Ce site a pour thème le royaume mythologique de Colchide (voir le [mythe de la 
 
 J'ai utilisé Vite pour réaliser le build.
 
-## TODO
-
-- Améliorer le chargement des images
-- Ajouter une animation sur le dépliement/repliement du menu
-- Peut être ajouter une version an angalis des pages.
