@@ -15,5 +15,5 @@ Un petit site web statique que j'ai crée comme un exercice d'application pour p
 
 Ce site a pour thème le royaume mythologique de Colchide (voir le [mythe de la toison d'or](https://fr.wikipedia.org/wiki/Toison_d%27or). C'est un site responsive qui comporte un peu de Javascript (pour le menu mobile et le message indiquant l'envoi du formulaire de contact)
 
-J'ai utilisé Vite pour réaliser le build.
+J'ai utilisé **Vite** pour réaliser le build.
 
