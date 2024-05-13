@@ -10,7 +10,7 @@ const dev = "http://localhost:5173/";
 const prod = "https://sebnoret-portfolio.netlify.app/royaume-de-colchide/demo/";
 
 export default defineConfig({
-  base: dev,
+  base: prod,
   plugins: [
     legacy({
       targets: ["defaults", "not IE 11"],
